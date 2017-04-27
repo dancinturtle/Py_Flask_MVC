@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Products</title>
+</head>
+<body>
+	<h1>Products</h1>
+	<a href="/">Welcome</a>
+	<a href="/products">Products</a>
+	<hr>
+
+	{% for product in content.products %}
+		<h5>{{ product.id }} - {{ product.title }}</h5>
+	{% endfor %}
+	
+</body>
+</html>
